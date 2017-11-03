@@ -34,11 +34,14 @@ public class CalendarioBasico
     { String  d =  dia +"-";
         String  m = mes +"-";
         String  a = ano +"";
-        if(dia<10 || mes<=10){
-            d = "0" + d;
-            m = "0" + m;
+        if(dia<10){
+            d = "0" + d;}  
+        if(mes<10) {   
+            m = "0" + m;}
+        if(ano<10){    
+            a = "0" + a;
         }    
-        return d + m + a.substring(2,4);
+        return d + m + a;
     }
 
     public void avanzarFecha()
